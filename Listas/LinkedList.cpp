@@ -43,7 +43,7 @@ template<class T> struct LinkedList {
     }
     else {
       Node * prev = head;
-      Node * last = head;
+      Node * last = head->next;
       while (last && last->next) {
         last = last->next;
         prev = prev->next;
